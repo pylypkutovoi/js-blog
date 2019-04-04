@@ -22,12 +22,12 @@ function tabClickHandler(event) {
     Array.from(this.$el.querySelectorAll('.tab')).forEach(tab => {
       tab.classList.remove('active');
     })
+
     event.target.classList.add('active');
 
     const activeTab = this.tabs.find(t => t.name === event.target.dataset.name);
-
     this.tabs.forEach(t=> t.component.hide());
-
+    
     activeTab.component.show();
     
   }
