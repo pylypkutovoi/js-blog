@@ -1,5 +1,4 @@
-import { Z_STREAM_ERROR } from "zlib";
-
+/* eslint-disable import/prefer-default-export */
 export class Form {
   constructor(form, controls) {
     this.form = form;

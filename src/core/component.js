@@ -1,7 +1,8 @@
+/* eslint-disable import/prefer-default-export */
 export class Component {
   constructor(id) {
-    this.$el = document.getElementById(id);
-    this.init();
+    this.$el = document.getElementById(id)
+    this.init()
   }
 
   init() {}
