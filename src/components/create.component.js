@@ -19,7 +19,7 @@ export class CreateComponent extends Component {
 }
 
 
-async function submitHandler (event) {
+async function submitHandler(event) {
   event.preventDefault();
 
   if (this.form.isValid()) {
@@ -31,7 +31,7 @@ async function submitHandler (event) {
 
     await apiService.createPost(formData);
     this.form.clear();
-    alert('Запись создана')
+    alert('Запись создана');
   } 
 
 }

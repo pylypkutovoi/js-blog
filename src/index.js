@@ -1,8 +1,8 @@
-import {HeaderComponent} from './components/header.component'
-import {NavigationComponent} from './components/navigation.component'
-import {CreateComponent} from './components/create.component'
-import {FavoriteComponent} from './components/favorite.component'
-import {PostsComponent} from './components/posts.component'
+import { HeaderComponent } from './components/header.component'
+import { NavigationComponent } from './components/navigation.component'
+import { CreateComponent } from './components/create.component'
+import { FavoriteComponent } from './components/favorite.component'
+import { PostsComponent } from './components/posts.component'
 import { LoaderComponent } from './components/loader.component'
 
 
@@ -13,7 +13,7 @@ const loader = new LoaderComponent('loader');
 
 const posts = new PostsComponent('posts', {loader});
 const create = new CreateComponent('create');
-const favorite = new FavoriteComponent('favorite');
+const favorite = new FavoriteComponent('favorite', {loader});
 
 
 navigation.registerTabs([
