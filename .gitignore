@@ -5,7 +5,9 @@
 *.pdf
 *.psd
 *.sublime*
+.firebase*
 dist/
 node_modules/
 npm-debug.*
 Thumbs.db
+firebase.json
